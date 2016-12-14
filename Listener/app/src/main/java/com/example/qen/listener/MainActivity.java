@@ -31,6 +31,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
         button2.setOnClickListener(this); // Присвоєння інтерефейсу класу Activity а потім другій кнопці
+        
+        textView.setOnClickListener(new View.OnClickListener() { // Присвоюєм інтерефейс окремо елементу textView який тепер клікабельний
+            @Override
+            public void onClick(View view) {
+                button3.setText("Clicked");
+            }
+        });
     }
 
     @Override
